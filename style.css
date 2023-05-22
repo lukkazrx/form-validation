@@ -1,0 +1,42 @@
+:root {
+  --var-blue: #395BEA;
+  --var-white:#FCFCFC;
+  --var-black: #111111;
+}
+
+.blue-section, .white-section {
+  padding: 5%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blue-section {
+  background-color: #395BEA;
+  color: var(--var-white);
+}
+
+.white-section {
+  color: var(--var-black);
+}
+
+form {
+  width: 70%;
+  padding: 3%;
+  background-color: #395BEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+  main {
+    display: flex;
+    
+  }
+  .blue-section, .white-section {
+    width: 50%;
+  }
+}
