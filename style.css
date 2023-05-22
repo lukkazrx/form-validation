@@ -11,6 +11,7 @@ h1 {
   margin-bottom: 0.7rem;
   font-weight: 700;
   font-family: 'ubuntu';
+  text-align: center;
 }
 
 h2 {
@@ -18,32 +19,42 @@ h2 {
   margin-bottom: 1rem;
 }
 
-p {
+p, a  {
   font-family: 'Roboto';
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .blue-section, .white-section {
-  padding: 5%;
-  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 600px;
 }
 
 .blue-section {
   background-color: #395BEA;
   color: var(--var-white);
+  justify-content: space-evenly;
+}
+
+#img-hllwrld {
+  min-width: 270px;
+  max-width: 400px;
 }
 
 .white-section {
   color: var(--var-black);
-  min-height: 500px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 form {
-  width: 70%;
+  width: 65%;
   padding: 3%;
   margin-top: 2rem;
   display: flex;
@@ -52,6 +63,7 @@ form {
   border-radius: 5px;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.2);
 }
+
 
 input {
   border-color: var(--var-blue);
@@ -68,6 +80,11 @@ input {
   width: 76%;
   height: 2rem;
   padding: 2%;
+}
+
+footer {
+  border-top: 1px solid var(--var-blue);
+  padding: 1%;
 }
 
 @media (min-width: 576px) {
