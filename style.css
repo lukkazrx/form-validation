@@ -53,7 +53,7 @@ a {
   align-items: center;
   flex-direction: column;
   min-height: 700px;
-  max-height: 1000px;
+  height: 900px;
 }
 
 .blue-section {
@@ -145,9 +145,18 @@ footer {
     inline-size: auto;
     overflow-wrap:unset;
   }
+  .blue-section, .white-section {
+    height: 100%;
+  }
 }
 
-@media  (min-width: 1920px) {
+@media (min-width: 1020px){
+  .blue-section, .white-section {
+    height: 975px;
+  }
+}
+
+@media (min-width: 1920px) {
   .lbl {
     right: 32%;
     top: 4%;
