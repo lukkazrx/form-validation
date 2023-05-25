@@ -1,55 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./img/hello-world-img.svg" type="image/x-icon">
-  <script src="index.js"></script>
-  <meta name="theme-color" content="#395BEA">
-  <title>Cadastro HLL WRLD</title>
-</head>
-<body>
-  <main>
-    
-    <section class="blue-section">
-      <div>
-        <h1>HELLO WORLD!</h1>
-        <h2>A nova rede social para conhecer o mundo!</h2>
-      </div>
-      <img id="img-hllwrld" src="./img/hello-world-img.svg" alt="Imagem de um celular com um planeta logo abaixo">
-      <p>Conecte-se ao novo mundo.</p>
-    </section>
+<html
+  lang="pt-br
+"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/hello-world-img.svg"
+      type="image/x-icon"
+    />
+    <script src="index.js" defer></script>
+    <meta name="theme-color" content="#395BEA" />
+    <title>Cadastro HLL WRLD</title>
+  </head>
+  <body>
+    <main>
+      <section class="blue-section">
+        <div>
+          <h1>HELLO WORLD!</h1>
+          <h2>A nova rede social para conhecer o mundo!</h2>
+        </div>
+        <img
+          id="img-hllwrld"
+          src="./img/hello-world-img.svg"
+          alt="Imagem de um celular com um planeta logo abaixo"
+        />
+        <p>Conecte-se ao novo mundo.</p>
+      </section>
 
-    <section class="white-section">
+      <section class="white-section">
         <h2>Insira suas informacoes para o cadastro.</h2>
-      <form action="" id="form">
-        <h2>Cadastre-se já!</h2>
-        <label class="lbl" for="nome">Nome</label> <br>
-        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
-        <br>
-        <label class="lbl" for="e-mail">E-mail</label><br>
-        <input type="email" name="e-mail" id="e-mail" placeholder="seuEmail@gmail.com" required>
-        <span class="span">Digite um e-mail válido</span>
-        <br>
-        <label class="lbl" for="senha">Senha</label><br>
-        <input type="password" name="senha" id="senha" placeholder="Sua senha" required>
-        <span class="span">A senha deve conter no mínimo 8 caracteres</span>
-        <br>
-        <a href="/">Esqueci minha senha</a>
-        <br>
-        
-        <button id="btn">Cadastrar</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>Design and Codes by</p>
-    <p>Lucas Ribeiro Nunes</p>
-    <p>Codes By</p>
-    <p>Samuel de Paula Bittencourt</p>
-  </footer>
-</body>
+
+        <form action="">
+          <h2>Cadastre-se já!</h2>
+          <label class="lbl" for="nome">Nome</label> <br />
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite seu nome"
+            oninput=""
+            required
+          />
+          <span class="error"></span>
+          <br />
+          <label class="lbl" for="e-mail">E-mail</label><br />
+          <input
+            type="email"
+            name="e-mail"
+            id="e-mail"
+            placeholder="seuEmail@gmail.com"
+            required
+          />
+          <span class="error"></span>
+          <br />
+          <label class="lbl" for="senha">Senha</label><br />
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Sua senha"
+            required
+          />
+          <span class="error"></span>
+          <br />
+          <a href="/">Esqueci minha senha</a>
+          <br />
+
+          <button type="submit" id="btn">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Design and Codes by</p>
+      <p>Lucas Ribeiro Nunes</p>
+      <p>Codes By</p>
+      <p>Samuel de Paula Bittencourt</p>
+    </footer>
+  </body>
 </html>
