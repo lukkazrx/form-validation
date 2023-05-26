@@ -33,7 +33,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-p, a  {
+p, a, h2  {
   font-family: 'Roboto';
   text-align: center;
 }
@@ -42,13 +42,18 @@ a {
   text-decoration: none;
 }
 
+.hide {
+  display: none;
+}
+
 .blue-section, .white-section {
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 700px;
+  min-height: 700px;
+  height: 900px;
 }
 
 .blue-section {
@@ -84,6 +89,12 @@ input {
   border-radius: 3px;
   width: 70%;
   padding: 2%;
+}
+
+.span {
+  color: red;
+  inline-size: 150px;
+  overflow-wrap: break-word;
 }
 
 .lbl {
@@ -128,5 +139,26 @@ footer {
   }
   form {
     width: 60%;
+  }
+
+  .span {
+    inline-size: auto;
+    overflow-wrap:unset;
+  }
+  .blue-section, .white-section {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1020px){
+  .blue-section, .white-section {
+    height: 975px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .lbl {
+    right: 32%;
+    top: 4%;
   }
 }

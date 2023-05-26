@@ -54,26 +54,3 @@ function validarCampos(campo){
         }
     }
 }
-
-function validacaoCustomizada(event){  
-    
-    const campo = event.target
-    const validacao = validarCampos(campo)
-
-    validacao()
-}
-
-for(campo of campos){
-    campo.addEventListener("invalid",  event =>{
-        //eliminando o balão de erro padrão
-        event.preventDefault()
-        validacaoCustomizada(event)
-    })
-    campo.addEventListener("blur", validacaoCustomizada)
-}
-
-document.querySelector("form").addEventListener("submit", (event)=>{
-    console.log('enviar o formulário')
-
-    event.preventDefault()
-})
